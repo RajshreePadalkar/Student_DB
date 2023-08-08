@@ -16,7 +16,7 @@ public class StudentDao {
     ResultSet rs = null;
     DataSource ds = new DataSource();
 
-    public List<Student> getLoginDetails() throws SQLException {
+    public List<Student> getStudentDetails() throws SQLException {
 	String query = "Select * from students";
 	conn = ds.getConnection();
 	List<Student> StudentList = new ArrayList<>();

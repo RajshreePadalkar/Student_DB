@@ -15,7 +15,7 @@ public class StudentTest {
 	try {
 	    // to read the table
 
-	    studentList = stud.getLoginDetails();
+	    studentList = stud.getStudentDetails();
 	    for (Student s : studentList) {
 		System.out.println(s);
 	    }
