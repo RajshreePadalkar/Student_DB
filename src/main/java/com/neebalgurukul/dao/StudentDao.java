@@ -8,6 +8,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.neebalgurukul.Exception.DuplicateEmailException;
+import com.neebalgurukul.Exception.IdNotFoundException;
 import com.neebalgurukul.model.Student;
 
 public class StudentDao {
@@ -86,7 +88,7 @@ public class StudentDao {
 	return studentCreated;
     }
 
-    public void deleteHard(int id) throws SQLException, IdNotFoundException {
+    public void delete(int id) throws SQLException, IdNotFoundException {
 	String query = "delete from students where id=?";
 	conn = ds.getConnection();
 	try {

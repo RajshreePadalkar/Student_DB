@@ -1,4 +1,4 @@
-package com.neebalgurukul.dao;
+package com.neebalgurukul.Exception;
 
 public class DuplicateEmailException extends Exception {
 

@@ -1,9 +1,10 @@
-package com.neebalgurukul.model;
+package com.neebalgurukul.java;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import com.neebalgurukul.dao.StudentDao;
+import com.neebalgurukul.model.Student;
 
 public class StudentTest {
     public static void main(String[] args) {
@@ -22,7 +23,7 @@ public class StudentTest {
 
 	    // to add a student
 
-	    Student toAdd = new Student("Malika", "malika@gmail.com", "Testin", 22);
+	    Student toAdd = new Student("komal", "komal@gmail.com", "java", 22);
 	    stud.insertDetails(toAdd);
 
 	    // to update the table
@@ -31,7 +32,7 @@ public class StudentTest {
 
 	    // to delete a student enrty
 
-	    stud.deleteHard(4);
+	    stud.delete(4);
 
 	} catch (Exception e) {
 	    e.printStackTrace();
