@@ -22,16 +22,16 @@ public class StudentTest {
 
 	    // to add a student
 
-	    Student toAdd = new Student("Malik", "malik@gmail.com", "Testin", 22);
+	    Student toAdd = new Student("Malika", "malika@gmail.com", "Testin", 22);
 	    stud.insertDetails(toAdd);
 
 	    // to update the table
 
-	    stud.updateCourse(2, "Java");
+	    stud.updateCourse(5, "Java");
 
 	    // to delete a student enrty
 
-	    stud.deleteHard(1);
+	    stud.deleteHard(4);
 
 	} catch (Exception e) {
 	    e.printStackTrace();

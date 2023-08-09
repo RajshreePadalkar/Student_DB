@@ -26,6 +26,7 @@ public class StudentDao {
 	    if (rs != null) {
 		while (rs.next()) {
 		    Student obj = new Student();
+		    obj.setId(rs.getInt("id"));
 		    obj.setName(rs.getString("name"));
 		    obj.setEmail(rs.getString("email"));
 		    obj.setCourse(rs.getString("course"));
